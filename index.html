@@ -12,43 +12,6 @@
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
         <title>Portfolio website complete</title>
-
-        <style>
-        body{
-          margin: 0;
-          padding: 0;
-          font-family: sans-serif;
-        }
-        label{
-            position: absolute;
-            width: 45px;
-            height: 22px;
-            right: 20px;
-            top: 20px;
-            border: 2px solid;
-            border-radius: 20px;
-            margin-top: 100px;
-        }
-        label:before{
-            position: absolute;
-            content: '';
-            width:20px;
-            height: 20px;
-            left: 1px;
-            top: 1px;
-            border-radius: 50%;
-            background: #000;
-            cursor: pointer;
-            transition: 0.4s;
-        }
-        label.active:before{
-            left: 24px;
-            background: #fff;
-        }
-        body.night{
-            background: #000;
-            color: #fff;
-        }
         </style>
     </head>
     <body>
@@ -56,7 +19,7 @@
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#" class="nav__logo">DERRY</a>
+                    <a href="#" class="nav__logo"><img src="assets/img/D.png"></a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -69,7 +32,7 @@
                 </div>
 
                 <div class="nav__btns">
-                    <a href="#" class="hbome__social-icon"><i class='bx bx-moon' id="theme-button"></i></a>
+                    <a href="#" class="home__social-icon"><i class='bx bx-moon' id="theme-button"></i></a>
                 </div>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
@@ -87,6 +50,10 @@
 
                     <a href="#" class="button">Contact</a>
                 </div>
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
             </section>
 
             <!--===== ABOUT =====-->
@@ -176,9 +143,13 @@
         <footer class="footer">
             <p class="footer__title">Derry</p>
             <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                <a>Follow Me</a> 
+                <ul>
+                    <li href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></li>
+                    <li href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></li>
+                    <li href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></li>
+                </ul>
+                
             </div>
         </footer>
 

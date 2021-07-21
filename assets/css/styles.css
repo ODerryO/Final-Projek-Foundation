@@ -16,7 +16,7 @@
 }
 
 body.dark-theme {
-  background-color: black;
+  background-color: #263f3f;
   --first-color: #47d1c6;
   --second-color: white;
   --back-color: #008a7e;
@@ -181,9 +181,6 @@ img{
   top: 2rem;
   background-color: var(--first-color);
 }
-.nav__logo{
-  color: white;
-}
 .nav__toggle{
   color: var(--second-color);
   font-size: 1.5rem;
@@ -229,11 +226,12 @@ img{
   width: max-content;
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
-  color: var(--second-color);
+  color: var(white);
 }
 .home__social-icon:hover{
   color: var(--first-color);
 }
+
 .home__img{
   position: absolute;
   right: 0;
@@ -364,21 +362,30 @@ img{
 .footer{
   background-color: var(--back-color);
   color: var(--second-color);
-  text-align: center;
   font-weight: var(--font-semi);
-  padding: 2rem 0;
+  padding: 0px;
+  width:100%;
+  height: 200px;
 }
 .footer__title{
-  font-size: 2rem;
-  margin-bottom: var(--mb-4);
+  text-align: left;
+  font-size: var(--h2-font-size)
 }
 .footer__social{
-  margin-bottom: var(--mb-4);
+  text-align: right;
+  margin-right: 30px;
+  margin-top: 0px;
 }
 .footer__icon{
   font-size: 1.5rem;
+  text-align: right;
   color: #fff;
   margin: 0 var(--mb-2)
+}
+
+.footer__deskripsi {
+  color: white;
+  text-align: right;
 }
 
 /* ===== MEDIA QUERIES=====*/
