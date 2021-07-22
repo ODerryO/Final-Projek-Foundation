@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
 }
+
 .change-theme {
   font-size: 1.2rem;
   cursor: pointer;
@@ -158,7 +159,7 @@ img{
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--second-color);
+    background-color: #263f3f;
     transition: .5s;
   }
 }
@@ -179,7 +180,7 @@ img{
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color: black;
 }
 .nav__toggle{
   color: var(--second-color);
@@ -222,11 +223,10 @@ img{
   display: flex;
   flex-direction: column;
 }
-.home__social-icon{
+.home__social-icon1{
   width: max-content;
-  margin-bottom: var(--mb-2);
   font-size: 1.5rem;
-  color: var(white);
+  color: white;
 }
 .home__social-icon:hover{
   color: var(--first-color);
@@ -361,26 +361,41 @@ img{
 /* ===== FOOTER =====*/
 .footer{
   background-color: var(--back-color);
-  color: var(--second-color);
+  color: white;
   font-weight: var(--font-semi);
-  padding: 0px;
-  width:100%;
-  height: 200px;
+  display: flex;
+  justify-content: space-between;
 }
 .footer__title{
   text-align: left;
-  font-size: var(--h2-font-size)
+  font-size: var(--h2-font-size);
+  color: white;
+  padding: 20px;
+  margin-left: 20px;
 }
+
+.footer__social a {
+  color: white;
+}
+
 .footer__social{
   text-align: right;
   margin-right: 30px;
+  display: inline;
   margin-top: 0px;
+  padding-right: 50px;
+  margin-top: 15px;
+}
+
+.footer__social a {
+  margin-right: 50px;
 }
 .footer__icon{
   font-size: 1.5rem;
   text-align: right;
   color: #fff;
-  margin: 0 var(--mb-2)
+  margin: 0 var(--mb-2);
+  display: inline;
 }
 
 .footer__deskripsi {
@@ -393,6 +408,7 @@ img{
   body{
     margin: 0;
   }
+  
   .section{
     padding-top: 4rem;
     padding-bottom: 3rem;
@@ -416,11 +432,13 @@ img{
     margin-left: var(--mb-6);
     margin-bottom: 0;
   }
+
+
   .nav__toggle{
     display: none;
   }
   .nav__link{
-    color: var(white);
+    color: white;
   }
 
   .home{
@@ -463,6 +481,8 @@ img{
   .contact__container{
     justify-items: center;
   }
+
+
 }
 
 @media screen and (min-width: 1024px){
