@@ -374,8 +374,12 @@ img{
   margin-left: 20px;
 }
 
+.footer__social p {
+  margin-right: 55px;
+}
+
 .footer__social a {
-  color: white;
+  margin-right: 30px;
 }
 
 .footer__social{
